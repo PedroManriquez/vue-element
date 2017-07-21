@@ -5,6 +5,7 @@ import App from './App'
 import router from './router'
 import ElementUI from 'element-ui'
 import locale from 'element-ui/lib/locale/lang/es'
+// import VueResource from 'vue-resource'
 
 Vue.config.productionTip = false
 

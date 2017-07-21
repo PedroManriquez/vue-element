@@ -1,7 +1,14 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view></router-view>
+    <el-menu theme="dark" :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
+      <el-menu-item index="1"><i class="el-icon-menu"></i><router-link to="/movie">Movies</router-link></el-menu-item>
+      <el-menu-item index="2"><i class="el-icon-setting"></i><router-link to="/">init</router-link></el-menu-item>
+    </el-menu>
+    <el-row class="tac">
+      <el-col :span="24">
+        <router-view></router-view>
+      </el-col>
+    </el-row>
   </div>
 </template>
 
@@ -18,6 +25,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>

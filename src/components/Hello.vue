@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+    <hr>
     <el-button type="success" @click="open">Click to open the Message Box</el-button>
   </div>
 </template>
